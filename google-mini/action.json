@@ -1,7 +1,35 @@
+// {
+//   "actions": [
+//     {
+//       "description": "Add Ingredient Intent",
+//       "name": "MAIN",
+//       "fulfillment": {
+//         "conversationName": "ReciPenn"
+//       },
+//       "intent": {
+//         "name": "actions.intent.MAIN",
+//         "trigger": {
+//           "queryPatterns": [
+//             "add ingredient",
+//             "add",
+//           ]
+//         }
+//       }
+//     }
+//   ],
+//   "conversations": {
+//     "ReciPenn": {
+//       "name": "ReciPenn",
+//       // "url": "<INSERT YOUR FULLFILLMENT URL HERE>"
+//     }
+//   },
+//   "locale": "en"
+// }
+
 {
   "actions": [
     {
-      "description": "Add Ingredient Intent",
+      "description": "Default",
       "name": "MAIN",
       "fulfillment": {
         "conversationName": "ReciPenn"
