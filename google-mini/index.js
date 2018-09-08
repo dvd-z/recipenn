@@ -7,7 +7,7 @@ const app = dialogflow({
 });
 
 app.intent('add ingredient', (conv, {unitinformationname}) => {
-	conv.close("Test");
-})
+    conv.close('Test');
+});
 
 exports.dialogflowFirebaseFulfillment = functions.https.onRequest(app);
