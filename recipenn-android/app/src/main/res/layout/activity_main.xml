@@ -21,12 +21,14 @@
         android:textAlignment="center"/>
 
     <Button
+        android:id="@+id/ingredientButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add Ingredient"
         android:textSize="24sp" />
 
     <Button
+        android:id="@+id/recipeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="View Recipes"
