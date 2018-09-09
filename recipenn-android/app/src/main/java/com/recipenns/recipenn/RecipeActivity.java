@@ -5,7 +5,10 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-public class RecipeActivity extends AppCompatActivity {x
+import java.util.ArrayList;
+import java.util.List;
+
+public class RecipeActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
@@ -20,5 +23,16 @@ public class RecipeActivity extends AppCompatActivity {x
 
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
+
+        List<RecipeObject> newObjects = new ArrayList<>();
+        for(int i=0;i<10;i++){
+            RecipeObject newObject = new RecipeObject();
+            newObject.setIngredients("TEST TEST INGREDIENT");
+            newObject.setTitle("TEST TEST TITLE");
+            newObjects.add(newObject);
+        }
+
+        adapter = new RecipeAdapter(newObjects);
+        recyclerView.setAdapter(adapter);
     }
 }
