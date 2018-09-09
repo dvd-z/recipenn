@@ -1,0 +1,28 @@
+{
+  "id": "1e9053a8-9425-447c-ad12-3ed0f421de2c",
+  "name": "get recipes",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "Finding a recipe."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1536456632,
+  "fallbackIntent": false,
+  "events": []
+}

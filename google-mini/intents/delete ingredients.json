@@ -1,0 +1,28 @@
+{
+  "id": "9713367c-653b-4c89-bdf7-1ab0b864746c",
+  "name": "delete ingredients",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "Removed item from your ingredients list."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1536456776,
+  "fallbackIntent": false,
+  "events": []
+}
