@@ -32,16 +32,19 @@ exports.delete_user = function (req, res) {
 }
 
 //send username, password, ingredient
-exports.add_ingredient = function (req, res) {
-    var new_i = req.body.ingredient;
+exports.add_ingredients = function (req, res) {
+    var new_is = JSON.parse(req.body.ingredients);
     let callback = function (chosen_user) {
         if (!chosen_user) {
             res.send("Error");
             return;
         }
-        chosen_user.owned_ingredients.push(new_i);
-        update_ingredients(chosen_user, chosen_user.owned_ingredients)
-        res.send("added ingredient")
+        new_is.forEach(function(new_i){
+            chosen_user.owned_ingredients.push(new_i);
+        })
+        
+        update_ingredients(chosen_user, chosen_user.owned_ingredients);
+        res.send("added ingredient");
     }
 
     find_user(req.body.username, callback);

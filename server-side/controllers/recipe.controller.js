@@ -8,7 +8,6 @@ exports.test = function (req, res) {
 
 //add/create a recipe
 exports.create_recipe = function (req, res) {
-
     // let post_verify= function(){
     console.log("body", req.body)
     ingredients = req.body.ingredients
@@ -30,6 +29,24 @@ exports.create_recipe = function (req, res) {
 
     // }
     // Login.verify_user(req.body.name, req.body.password);
+
+}
+
+exports._save_recipe = function(name,ingredients, instructions){
+    let recipe = new Recipe(
+        {
+            name: name,
+            ingredients: ingredients,
+            instructions: instructions,
+            creator_username: "default"
+        }
+    );
+    recipe.save(function (err) {
+        if (err) {
+            console.log("error")
+        }
+        
+    })
 
 }
 
@@ -75,5 +92,9 @@ function get_all(){
         }
         return false;
     });
+}
+
+exports.add_all_recipes = function(req,res){
+    
 }
 
