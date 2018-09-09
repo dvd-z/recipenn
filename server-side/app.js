@@ -18,8 +18,9 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use('/recipe', recipe);
 app.use('/user', user);
 
+
 let port = 8080;
 
 app.listen(port, ()=>{
     console.log("Server is running at port: ", port);
-})
+});
