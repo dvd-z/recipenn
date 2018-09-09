@@ -24,11 +24,9 @@ app.intent('add ingredients', (conv, {any}) => {
 			url: url,
 			data: data,
 			async: false,
-			success: function(data) {
-				conv.ask('Added items to your list.');
-			},
+			success: function(data) {},
 			error: function(data) {
-				conv.ask('An error occurred, unable to add item.');
+				conv.ask('An error occurred, unable to add items.');
 			}
 		)
 	}
@@ -37,7 +35,7 @@ app.intent('add ingredients', (conv, {any}) => {
 app.intent('remove ingredients', (conv, {any}) => {
 	data = {
 		'username': username,
-		'ingredients': any,
+		'ingredients': any
 	};
 	data = JSON.stringify(data);
 
@@ -46,22 +44,46 @@ app.intent('remove ingredients', (conv, {any}) => {
 		url: url,
 		data: data,
 		async: false,
-		success: function(data) {
-			conv.ask('Removed items from your list.');
-		},
+		success: function(data) {},
 		error: function(data) {
-			conv.ask('An error occurred, unable to add item.');
+			conv.ask('An error occurred, unable to remove items.');
 		}
 	)
 });
 
-// Username
 app.intent('remove all', (conv) => {
-	
+	data = {
+		'username': username
+	}
+	data = JSON.stringify(data);
+
+	$.ajax(
+		type: post,
+		url: url,
+		data: data,
+		async: false,
+		success: function(data) {},
+		error: function(data) {
+			conv.ask('An error occurred, unable to remove all items.');
+		}
+	)
 });
 
 app.intent('get recipe', (conv) => {
-	
+	var data;
+
+	$.ajax(
+		type: get,
+		url: url,
+		data: data,
+		async: false,
+		success: function(data) {
+			conv.ask('The recipe found was: ' + data.name);
+		},
+		error: function(data) {
+			conv.ask('An error occurred, unable to get recipe.');
+		}
+	)
 });
 
 exports.dialogflowFirebaseFulfillment = functions.https.onRequest(app);
