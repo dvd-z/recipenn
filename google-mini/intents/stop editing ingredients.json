@@ -1,0 +1,28 @@
+{
+  "id": "e0f2f6f5-b697-4386-be7c-e53571cc6e73",
+  "name": "stop editing ingredients",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "Finished editing ingredients list."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1536456851,
+  "fallbackIntent": false,
+  "events": []
+}

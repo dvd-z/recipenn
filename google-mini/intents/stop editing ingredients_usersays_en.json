@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1fc94f48-84b7-4395-a969-9fa8f442bbd1",
+    "data": [
+      {
+        "text": "end of ingredients list",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1536455278
+  },
+  {
+    "id": "5998cd51-3d56-4b68-8a7a-6aebf566e7c2",
+    "data": [
+      {
+        "text": "end of list",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1536455278
+  }
+]

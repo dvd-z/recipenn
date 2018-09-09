@@ -1,0 +1,38 @@
+[
+  {
+    "id": "a0c363a1-c8ea-4e86-8344-5c298c6603d1",
+    "data": [
+      {
+        "text": "Recommend me a recipe",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1536456615
+  },
+  {
+    "id": "8f73f04b-293c-4ba6-bdb2-d8c8ed045c9f",
+    "data": [
+      {
+        "text": "Get me a recipe",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1536456615
+  },
+  {
+    "id": "26caf92a-e7b0-4030-a96d-655feffeaa8c",
+    "data": [
+      {
+        "text": "Find me a recipe",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1536456615
+  }
+]

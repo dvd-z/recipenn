@@ -1,0 +1,50 @@
+[
+  {
+    "id": "37000d4c-462e-42d2-9038-ff051737d71a",
+    "data": [
+      {
+        "text": "Remove beef from my ingredients list",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1536456776
+  },
+  {
+    "id": "665a9993-1107-4856-ac13-1fde7fd40001",
+    "data": [
+      {
+        "text": "Remove apples from my ingredients list",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1536456776
+  },
+  {
+    "id": "6498dff8-a4a2-4ef4-b24e-ca15f191846b",
+    "data": [
+      {
+        "text": "Remove chicken from my ingredients list",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1536456776
+  },
+  {
+    "id": "49a0a133-7fb1-45dc-b334-dc51a32f2382",
+    "data": [
+      {
+        "text": "Remove corn from my ingredients list",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1536456776
+  }
+]

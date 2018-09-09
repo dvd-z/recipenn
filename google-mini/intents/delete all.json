@@ -1,0 +1,28 @@
+{
+  "id": "7287d670-2ad6-42f3-861e-62d963357d37",
+  "name": "delete all",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "Your ingredients list has been cleared."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1536456214,
+  "fallbackIntent": false,
+  "events": []
+}

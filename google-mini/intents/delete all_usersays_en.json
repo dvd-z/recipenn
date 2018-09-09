@@ -1,0 +1,26 @@
+[
+  {
+    "id": "b6d9e6db-785d-4f4f-9aad-59e56c27d43e",
+    "data": [
+      {
+        "text": "Delete items on my ingredients list",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1536456214
+  },
+  {
+    "id": "c4689c36-979f-4a12-8a35-6e5485d150b2",
+    "data": [
+      {
+        "text": "Delete all items on my ingredients list",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1536456214
+  }
+]
