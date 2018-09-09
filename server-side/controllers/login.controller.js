@@ -1,6 +1,7 @@
-function verify_user(){
-    
+function verify_user() {
+
 }
-function hash(pass){
+
+function hash(pass) {
     return pass;
 }

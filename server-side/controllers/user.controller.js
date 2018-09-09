@@ -39,16 +39,16 @@ exports.add_ingredients = function (req, res) {
             res.send("Error");
             return;
         }
-        new_is.forEach(function(new_i){
+        new_is.forEach(function (new_i) {
             chosen_user.owned_ingredients.push(new_i);
         })
-        
+
         update_ingredients(chosen_user, chosen_user.owned_ingredients);
         res.send("added ingredient");
     }
 
     find_user(req.body.username, callback);
-    
+
 }
 
 //send username, password, ingredient
@@ -59,7 +59,7 @@ exports.remove_ingredient = function (req, res) {
             res.send("Error");
             return;
         }
-        if(chosen_user.owned_ingredients.indexOf(remove_i)==-1){
+        if (chosen_user.owned_ingredients.indexOf(remove_i) == -1) {
             res.send("Ingredient not owned");
         }
         chosen_user.owned_ingredients.splice(chosen_user.owned_ingredients.indexOf(remove_i), 1);
@@ -67,7 +67,7 @@ exports.remove_ingredient = function (req, res) {
         res.send("removed ingredient")
     }
     find_user(req.body.username, callback);
-    
+
 }
 
 

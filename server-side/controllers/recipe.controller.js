@@ -32,7 +32,7 @@ exports.create_recipe = function (req, res) {
 
 }
 
-exports._save_recipe = function(name,ingredients, instructions){
+exports._save_recipe = function (name, ingredients, instructions) {
     let recipe = new Recipe(
         {
             name: name,
@@ -45,7 +45,7 @@ exports._save_recipe = function(name,ingredients, instructions){
         if (err) {
             console.log("error")
         }
-        
+
     })
 
 }
@@ -77,12 +77,12 @@ exports.get_all_recipes = function (req, res) {
 
 
 //only returns list of recipes, not jsonified
-exports._get_all_recipes = function(){
+exports._get_all_recipes = function () {
     return get_all()
 };
 
 //function that returns all 
-function get_all(){
+function get_all() {
     var query = Recipe.where({});
     query.findOne(function (err, recipes) {
         if (err) return false;
@@ -94,7 +94,7 @@ function get_all(){
     });
 }
 
-exports.add_all_recipes = function(req,res){
-    
+exports.add_all_recipes = function (req, res) {
+
 }
 
