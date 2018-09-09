@@ -18,8 +18,18 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use('/recipe', recipe);
 app.use('/user', user);
 
+
+
 let port = 8080;
 
 app.listen(port, ()=>{
     console.log("Server is running at port: ", port);
-})
+});
+
+//algorithm for adding all data to database
+// let receipe_cont = require("./controllers/recipe.controller")
+// let recipes_lis = require( "../dataset/dataset.json" ) ;
+// recipes_lis.forEach(function(rec) {
+//     receipe_cont._save_recipe(rec.title, rec.ingredients, rec.directions)
+// });
+// console.log(recipes_lis[1]);

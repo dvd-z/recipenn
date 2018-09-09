@@ -1,6 +1,6 @@
 {
-  "id": "e0f2f6f5-b697-4386-be7c-e53571cc6e73",
-  "name": "stop editing ingredients",
+  "id": "7287d670-2ad6-42f3-861e-62d963357d37",
+  "name": "remove all",
   "auto": true,
   "contexts": [],
   "responses": [
@@ -12,7 +12,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "Finished editing ingredients list."
+          "speech": "Your ingredients list has been cleared."
         }
       ],
       "defaultResponsePlatforms": {},
@@ -22,7 +22,7 @@
   "priority": 500000,
   "webhookUsed": true,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1536469752,
+  "lastUpdate": 1536475649,
   "fallbackIntent": false,
   "events": []
 }
