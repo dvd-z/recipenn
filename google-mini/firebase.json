@@ -3,13 +3,13 @@
     "rules": "database.rules.json"
   },
   "hosting": {
-  	"public": "public",
-  	"ignore": [
-  		"firebase.json",
-  		"database.rules.json",
-  		"action.json",
-  		"index.js",
-  		"package.json"
-  	]
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "database.rules.json",
+      "action.json",
+      "index.js",
+      "package.json"
+    ]
   }
 }
