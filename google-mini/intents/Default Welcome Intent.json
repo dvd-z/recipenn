@@ -13,12 +13,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": [
-            "Hi! How are you doing?",
-            "Hello! How can I help you?",
-            "Good day! What can I do for you today?",
-            "Greetings! How can I assist?"
-          ]
+          "speech": "Welcome to ReciPenn! Add or remove ingredients from your list and then ask me to find a recipe for you."
         }
       ],
       "defaultResponsePlatforms": {},
@@ -26,12 +21,16 @@
     }
   ],
   "priority": 500000,
-  "webhookUsed": false,
+  "webhookUsed": true,
   "webhookForSlotFilling": false,
+  "lastUpdate": 1536467004,
   "fallbackIntent": false,
   "events": [
     {
       "name": "WELCOME"
+    },
+    {
+      "name": "GOOGLE_ASSISTANT_WELCOME"
     }
   ]
 }

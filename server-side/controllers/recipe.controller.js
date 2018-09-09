@@ -1,12 +1,13 @@
 const Recipe = require('../models/recipe.model');
 const Login = require('../controllers/login.controller');
 
+
 exports.test = function (req, res) {
     res.send('Greetings from the Test controller!');
 }
 
+//add/create a recipe
 exports.create_recipe = function (req, res) {
-
     // let post_verify= function(){
     console.log("body", req.body)
     ingredients = req.body.ingredients
@@ -31,6 +32,25 @@ exports.create_recipe = function (req, res) {
 
 }
 
+exports._save_recipe = function(name,ingredients, instructions){
+    let recipe = new Recipe(
+        {
+            name: name,
+            ingredients: ingredients,
+            instructions: instructions,
+            creator_username: "default"
+        }
+    );
+    recipe.save(function (err) {
+        if (err) {
+            console.log("error")
+        }
+        
+    })
+
+}
+
+//function to get single recipe
 exports.get_recipe = function (req, res) {
     console.log(req.body);
     var query = Recipe.where({ name: req.body.name });
@@ -41,6 +61,40 @@ exports.get_recipe = function (req, res) {
             res.send(JSON.stringify(recipe));
         }
     });
+}
 
+//handles get request for getting all recipes
+exports.get_all_recipes = function (req, res) {
+    var query = Recipe.where({});
+    query.findOne(function (err, recipes) {
+        if (err) return next(err);
+        if (recipes) {
+            res.send(recipes)
+        }
+        return false;
+    });
+}
+
+
+//only returns list of recipes, not jsonified
+exports._get_all_recipes = function(){
+    return get_all()
+};
+
+//function that returns all 
+function get_all(){
+    var query = Recipe.where({});
+    query.findOne(function (err, recipes) {
+        if (err) return false;
+        if (recipes) {
+            console.log(recipes)
+            return recipes;
+        }
+        return false;
+    });
+}
+
+exports.add_all_recipes = function(req,res){
+    
 }
 
