@@ -1,6 +1,6 @@
 package com.recipenns.recipenn;
 
-public class RecipeModel {
+public class RecipeObject {
     String title;
     String ingredients;
 
