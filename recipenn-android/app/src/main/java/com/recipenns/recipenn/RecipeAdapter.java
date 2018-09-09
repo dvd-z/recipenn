@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.MyViewHolder>{
+public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.MyViewHolder> {
     private List<RecipeObject> dataset;
 
     @NonNull
@@ -45,6 +45,4 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.MyViewHold
     public RecipeAdapter(List<RecipeObject> newDataset) {
         this.dataset = newDataset;
     }
-
-
 }

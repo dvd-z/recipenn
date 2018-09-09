@@ -25,7 +25,7 @@ public class RecipeActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
 
         List<RecipeObject> newObjects = new ArrayList<>();
-        for(int i=0;i<10;i++){
+        for (int i = 0; i < 10; i++) {
             RecipeObject newObject = new RecipeObject();
             newObject.setIngredients("TEST TEST INGREDIENT");
             newObject.setTitle("TEST TEST TITLE");
