@@ -6,8 +6,20 @@ const app = dialogflow({
 	debug: true
 });
 
-app.intent('add ingredient', (conv, {unitinformationname}) => {
-    conv.close('Test');
+app.intent('add ingredients', (conv, {any}) => {
+
+});
+
+app.intent('delete ingredients', (conv, {any}) => {
+
+});
+
+app.intent('delete all', (conv) => {
+	
+});
+
+app.intent('get recipe', (conv) => {
+	
 });
 
 exports.dialogflowFirebaseFulfillment = functions.https.onRequest(app);
