@@ -6,7 +6,28 @@
   "googleAssistant": {
     "googleAssistantCompatible": true,
     "welcomeIntentSignInRequired": false,
-    "startIntents": [],
+    "startIntents": [
+      {
+        "intentId": "1e9053a8-9425-447c-ad12-3ed0f421de2c",
+        "signInRequired": false
+      },
+      {
+        "intentId": "7287d670-2ad6-42f3-861e-62d963357d37",
+        "signInRequired": false
+      },
+      {
+        "intentId": "9713367c-653b-4c89-bdf7-1ab0b864746c",
+        "signInRequired": false
+      },
+      {
+        "intentId": "e0f2f6f5-b697-4386-be7c-e53571cc6e73",
+        "signInRequired": false
+      },
+      {
+        "intentId": "9ee5e803-02f9-4c8e-98f0-8d8e6646c2f5",
+        "signInRequired": false
+      }
+    ],
     "systemIntents": [],
     "endIntentIds": [
       "e0f2f6f5-b697-4386-be7c-e53571cc6e73",
@@ -25,10 +46,11 @@
   },
   "defaultTimezone": "America/Los_Angeles",
   "webhook": {
-    "available": false,
+    "url": "https://us-central1-recipenn.cloudfunctions.net/dialogflowFirebaseFulfillment",
+    "available": true,
     "useForDomains": false,
-    "cloudFunctionsEnabled": false,
-    "cloudFunctionsInitialized": false
+    "cloudFunctionsEnabled": true,
+    "cloudFunctionsInitialized": true
   },
   "isPrivate": true,
   "customClassifierMode": "use.after",

@@ -6,20 +6,26 @@ const app = dialogflow({
 	debug: true
 });
 
-app.intent('add ingredients', (conv, {any}) => {
+// Username and ingredients ** stringify
+// app.intent('add ingredients', (conv, {any}) => {
+	// if (any.length < 0) {
+	// 	;
+	// }
+	// conv.ask(any);
+// });
 
-});
+// // Username and ingredients
+// app.intent('remove ingredients', (conv, {any}) => {
 
-app.intent('delete ingredients', (conv, {any}) => {
+// });
 
-});
-
-app.intent('delete all', (conv) => {
+// // Username
+// app.intent('remove all', (conv) => {
 	
-});
+// });
 
-app.intent('get recipe', (conv) => {
+// app.intent('get recipe', (conv) => {
 	
-});
+// });
 
 exports.dialogflowFirebaseFulfillment = functions.https.onRequest(app);

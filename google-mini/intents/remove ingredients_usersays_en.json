@@ -1,0 +1,132 @@
+[
+  {
+    "id": "8fab8810-19b1-4768-87d3-ed9bfe28fc3d",
+    "data": [
+      {
+        "text": "Remove ",
+        "userDefined": false
+      },
+      {
+        "text": "eggplant",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": ", ",
+        "userDefined": false
+      },
+      {
+        "text": "cheese",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": ", and ",
+        "userDefined": false
+      },
+      {
+        "text": "oranges",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " from my ingredients list",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1536475480
+  },
+  {
+    "id": "37000d4c-462e-42d2-9038-ff051737d71a",
+    "data": [
+      {
+        "text": "Remove ",
+        "userDefined": false
+      },
+      {
+        "text": "beef",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " from my ingredients list",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1536456776
+  },
+  {
+    "id": "665a9993-1107-4856-ac13-1fde7fd40001",
+    "data": [
+      {
+        "text": "Remove ",
+        "userDefined": false
+      },
+      {
+        "text": "apples",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " from my ingredients list",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1536456776
+  },
+  {
+    "id": "6498dff8-a4a2-4ef4-b24e-ca15f191846b",
+    "data": [
+      {
+        "text": "Remove ",
+        "userDefined": false
+      },
+      {
+        "text": "chicken",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " from my ingredients list",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1536456776
+  },
+  {
+    "id": "49a0a133-7fb1-45dc-b334-dc51a32f2382",
+    "data": [
+      {
+        "text": "Remove ",
+        "userDefined": false
+      },
+      {
+        "text": "corn",
+        "alias": "any",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " from my ingredients list",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1536456776
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "id": "9713367c-653b-4c89-bdf7-1ab0b864746c",
+  "name": "remove ingredients",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "65bff76c-2304-4320-94b9-bb3bba59775d",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "any",
+          "value": "$any",
+          "prompts": [],
+          "isList": true
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "Removed items from your ingredients list."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1536475680,
+  "fallbackIntent": false,
+  "events": []
+}

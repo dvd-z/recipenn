@@ -1,6 +1,6 @@
 {
-  "id": "e0f2f6f5-b697-4386-be7c-e53571cc6e73",
-  "name": "stop editing ingredients",
+  "id": "1e9053a8-9425-447c-ad12-3ed0f421de2c",
+  "name": "get recipe",
   "auto": true,
   "contexts": [],
   "responses": [
@@ -12,7 +12,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "Finished editing ingredients list."
+          "speech": "Finding a recipe."
         }
       ],
       "defaultResponsePlatforms": {},
@@ -22,7 +22,7 @@
   "priority": 500000,
   "webhookUsed": true,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1536469752,
+  "lastUpdate": 1536472841,
   "fallbackIntent": false,
   "events": []
 }
