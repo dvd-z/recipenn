@@ -23,7 +23,7 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.MyViewHold
     @Override
     public void onBindViewHolder(@NonNull RecipeAdapter.MyViewHolder myViewHolder, int i) {
         myViewHolder.title.setText(dataset.get(i).getTitle());
-        myViewHolder.content.setText(dataset.get(i).getIngredients());
+        myViewHolder.content.setText(dataset.get(i).getIngredients().toString());
     }
 
     @Override
